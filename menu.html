@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="must-revalidate">
+    <title>Habibi Bar and Grill - Menu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <script defer src="/assets/js/app.js"></script>
+</head>
+    <body>
+        <div class="desktopnav">
+        <div class="navheader">
+            <a href="index.html"><img class="nav-logo" src="/assets/img/habibi 250px.png" alt=""></a>
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+        </button>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="activepage"  href="menu.html">Menu</a></li>
+                <li><a href="apply.html">Applications</a></li>
+                <li><a href="booking.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="headergap"></div>
+
+    <div class="menu-body">
+        <div class="menu-select">
+        <button type="button" class="menutogglebtn toggle-button" data-target=".food">Mains</button>
+        <button type="button" class="menutogglebtn menutogglebtn2 toggle-button" data-target=".sides">Sides</button>
+        <button type="button" class="menutogglebtn menutogglebtn2 toggle-button" data-target=".drinks">Drinks</button>
+    </div>
+    </div> 
+<!-- Food -->
+    <div class="actualmenucard food toggle-target" data-hideme="hidden">
+        <!-- Biryani -->
+        <div class="menuitem">
+            <img class="menuitemimg" src="assets/img/Menu/Food/Biryani_FIRE_IMG.png" alt="">
+            <div class="menuitemtext">
+                <h1>Biryani</h1>
+                <p>$50</p>
+                <p>Spiced Basmati Rice cooked with herbs, vegetables, and your choice of savory protein</p>
+            </div>
+        </div>
+        <!-- Falafel -->
+        <div class="menuitem">
+            <div class="menuitemtext">
+                <img class="menuitemimg imgmobile" src="assets/img/Menu/Food/Falafel_Sandwich_FIRE_IMG.png" alt="">
+                <h1>Falafel Sandwich</h1>
+                <p>$50</p>
+                <p>Crispy falafel balls in pita with fresh salad, served with tahini sauce</p>
+            </div>
+            <img class="menuitemimg imgright" src="assets/img/Menu/Food/Falafel_Sandwich_FIRE_IMG.png" alt="">
+        </div>
+    </div>
+    <!-- Sides -->
+    <div class="actualmenucard sides toggle-target" data-hideme="hidden">
+        <!-- Hummus -->
+        <div class="menuitem">
+            <img class="menuitemimg" src="assets/img/Menu/Food/Hummus_FIRE_IMG.png" alt="">
+            <div class="menuitemtext">
+                <h1>Hummus</h1>
+                <p>$40</p>
+                <p>Creamy chickpea blend with tahini, garlic, and lemon, served with warm pita bread</p>
+            </div>
+        </div>
+        <!-- Tabbouleh -->
+        <div class="menuitem">
+            <div class="menuitemtext">
+                <img class="menuitemimg imgmobile" src="assets/img/Menu/Food/Tabbouleh_FIRE_IMG.png" alt="">
+                <h1>Tabbouleh</h1>
+                <p>$40</p>
+                <p>Fresh parsley salad with tomatoes, bulgur, mint, and a zesty lemon olive oil dressing</p>
+            </div>
+            <img class="menuitemimg imgright" src="assets/img/Menu/Food/Tabbouleh_FIRE_IMG.png" alt="">
+        </div>
+    </div>
+<!-- DRINKS -->
+    <div class="actualmenucard drinks toggle-target" data-hideme="hidden">
+        <div class="menuitem">
+            <img class="menuitemimg" src="assets/img/Menu/Drinks/Chai_Karak_FIRE_IMAGE.png" alt="">
+            <div class="menuitemtext">
+                <h1>Chai Karak</h1>
+                <p>$25</p>
+                <p>Strong spiced tea brewed with cardamom, saffron, and rich milk for a bold flavor</p>
+            </div>
+        </div>
+    </div>
+
+            <footer>
+                <img class="footerlogo" src="/assets/img/250 rocksolidw.png" alt="">
+                <p>&copy;:Rock Solid Inc. - Designed by Von Hendrix</p>
+            </footer>
+    </body>
+</html>

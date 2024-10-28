@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="must-revalidate">
+    <title>Habibi Bar and Grill - Contact Us</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <script defer src="/assets/js/app.js"></script>
+    <script defer src="/assets/js/webhooks.js"></script>
+</head>
+    <body>
+        <div class="desktopnav">
+        <div class="navheader">
+          <a href="index.html"><img class="nav-logo" src="/assets/img/habibi 250px.png" alt=""></a>
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+        </button>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a id="activepage" href="apply.html">Applications</a></li>
+                <li><a href="booking.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="headergap"></div>
+
+    <div class="appform">
+        <form onsubmit="sendApp(event)">
+            <label for="Question1" class="form-label">First / Last Name</label>
+            <textarea required class="form-control" id="Question1"></textarea>
+            <br>
+            <label for="Question2" class="form-label">Citizen ID (CSN)</label>
+            <textarea required class="form-control" id="Question2"></textarea>
+            <br>
+            <label for="Question3" class="form-label">Phone Number</label>
+            <textarea required class="form-control" id="Question3"></textarea>
+            <br>
+            <label for="Question4" class="form-label">Email (Discord Name)</label>
+            <textarea required class="form-control" id="Question4"></textarea>
+            <br>
+            <label for="Question5" class="form-label">Your NDRP Website Name (Link works too)</label>
+            <textarea required class="form-control" id="Question5"></textarea>
+            <br>
+            <label for="Question6">Your Time Zone</label>
+            <div class="custom-select">
+            <select required id="Question6" name="times">
+              <option value="select">Select...</option>
+              <option value="NA">NA</option>
+              <option value="EU">EU</option>
+              <option value="AU">AU</option>
+            </select>
+          </div>
+            <br>
+            <label for="Question7">What's the best way to reach you?</label>
+            <div class="custom-select">
+            <select class="custom-select" required id="Question7" name="contactway">
+              <option value="select">Select...</option>
+              <option value="Text">Text</option>
+              <option value="Phone Call">Phone Call</option>
+              <option value="Email (NDRP Website)">Email (NDRP Website)</option>
+              <option value="Text/Phone Call/ Email">Text/Phone Call/ Email</option>
+            </select>
+          </div>
+            <br>
+            <label for="Question8">Are you affiliated with any Gang/MC/Group?</label>
+            <div class="custom-select">
+            <select required class="custom-select" id="Question8" name="yesno">
+              <option value="select">Select...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+            <br>
+            <label for="Question9" class="form-label">If Yes, What Gang/MC/Group?</label>
+            <textarea class="form-control" id="Question9"></textarea>
+            <br>
+            <label for="Question10" class="form-label">Anything you would like us to know?</label>
+            <textarea required class="form-control" id="Question10"></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+            <footer>
+                <img class="footerlogo" src="/assets/img/250 rocksolidw.png" alt="">
+                <p>&copy;:Rock Solid Inc. - Designed by Von Hendrix</p>
+            </footer>
+    </body>
+</html>

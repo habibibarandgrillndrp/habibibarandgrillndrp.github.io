@@ -1,0 +1,125 @@
+     form {
+      margin-left: auto;
+      margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .form-label {
+    font-family: Boska !important;
+    font-size: 28px !important;
+    display: block;
+    margin: 10px 0 5px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .form-control {
+    font-family: Boska;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #F9AA05;
+    border-radius: 25px 0px 25px 0px;
+    font-size: 14px;
+    background: none;
+    color: white;
+    transition: border-color 0.3s;
+    resize: none;
+  }
+  
+
+
+  .form-control:focus {
+    border-color: #ef4805;
+    outline: none;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #F9AA05;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .btn-primary{
+    padding: 5px;
+    width: 60%;
+    font-family: Brush;
+    font-size: 24px;
+    border-radius: 25px 0px 25px 0px;
+    border: solid #EF4805 2px;
+    background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, #F9AA05 50%) right;
+    background-size: 200%;
+    color: white;
+    transition: ease-in-out 0.375s;
+}
+
+.btn-primary:hover{
+    background-position: left;
+    cursor: pointer;
+    text-shadow: black 1px 1px 2px;
+}
+
+@media (max-width: 800px){ 
+    form {
+      width: 80%;
+    }
+  }
+
+
+
+.custom-select {
+  font-family: Boska;
+  position: relative;
+  width: 100%;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: #151515;
+
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  border-radius: 25px 0px 25px 0px;
+  border: solid #F9AA05 1px;
+  margin: 10px;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #151515;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.select-hide {
+  display: none;
+}

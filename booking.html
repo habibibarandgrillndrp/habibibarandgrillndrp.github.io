@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="must-revalidate">
+    <title>Habibi Bar and Grill - Contact Us</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <script defer src="/assets/js/app.js"></script>
+    <script defer src="/assets/js/webhooks.js"></script>
+</head>
+    <body>
+        <div class="desktopnav">
+        <div class="navheader">
+            <a href="index.html"><img class="nav-logo" src="/assets/img/habibi 250px.png" alt=""></a>
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+        </button>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="apply.html">Applications</a></li>
+                <li><a id="activepage" href="booking.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="headergap"></div>
+
+    <div class="bookingform">
+        <form onsubmit="sendEventbooking(event)">
+            <label for="Question1" class="form-label">First / Last Name</label>
+            <textarea required class="form-control" id="Question1"></textarea>
+            <br>
+            <label for="Question2" class="form-label">Citizen ID (CSN)</label>
+            <textarea required class="form-control" id="Question2"></textarea>
+            <br>
+            <label for="Question3" class="form-label">Email (Discord Name)</label>
+            <textarea required class="form-control" id="Question3"></textarea>
+            <br>
+            <label for="Question4" class="form-label">Phone Number</label>
+            <textarea required class="form-control" id="Question4"></textarea>
+            <br>
+            <label for="Question5" class="form-label">Bank Number</label>
+            <textarea required class="form-control" id="Question5"></textarea>
+            <br>
+            <label for="Question6" class="form-label">Date and time (your local time for it)</label>
+            <input type="datetime-local" id="Question6">    
+            <br>
+            <label for="Question7" class="form-label">Location</label>
+            <textarea required class="form-control" id="Question7"></textarea>
+            <br>
+            <label for="Question8" class="form-label">Approximate Number of People</label>
+            <textarea required class="form-control" id="Question8"></textarea>
+            <br>
+            <label for="Question9" class="form-label">Duration</label>
+            <textarea required class="form-control" id="Question9"></textarea>
+            <br>
+            <label for="Question10" class="form-label">Do you want a Food Trunk, Delivery or Pick Up</label>
+            <div class="custom-select">
+            <select required id="Question10" name="durations">
+                <option value="select">Select...</option>
+                <option value="Food Trunk">Food Trunk</option>
+                <option value="Delivery">Delivery</option>
+                <option value="Pick Up">Pick Up</option>
+              </select>
+            </div>
+            <br>
+            <label for="Question11" class="form-label">Any Info That Will Help</label>
+            <textarea required class="form-control" id="Question11"></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+            <footer>
+                <img class="footerlogo" src="/assets/img/250 rocksolidw.png" alt="">
+                <p>&copy;:Rock Solid Inc. - Designed by Von Hendrix</p>
+            </footer>
+    </body>
+</html>
