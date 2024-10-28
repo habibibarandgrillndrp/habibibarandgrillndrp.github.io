@@ -29,7 +29,7 @@ bottom: 0;
     border-radius: 25px 0px 25px 0px;
     border: solid #EF4805 2px;
     background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, #F9AA05 50%) right;
-    background-size: 200%;
+    background-size: 201%;
     color: white;
     transition: ease-in-out 0.375s;
 }
