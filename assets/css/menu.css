@@ -1,3 +1,21 @@
+body {
+    --s: 17px; /* control the size*/
+    --c1: #454545;
+    --c2: #151515;
+    
+    --c:#0000 46.46%,var(--c1) 0 53.53%,#0000 0;
+    --d:calc(10*var(--s)) calc(10*var(--s));
+    --g:/var(--d) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+    background:
+      conic-gradient(at 40% 40%,#0000 75%,var(--c2) 0) 
+       calc(9*var(--s)) calc(9*var(--s))/
+       calc(5*var(--s)) calc(5*var(--s)),
+      calc(8*var(--s)) calc(8*var(--s)) var(--g),
+      calc(3*var(--s)) calc(3*var(--s)) var(--g),
+      linear-gradient( 45deg,var(--c)) 0 0/var(--d),
+      linear-gradient(-45deg,var(--c)) 0 0/var(--d) var(--c2);
+  }
+
 .toggle-target[data-hideme="hidden"] {
     display: none;
     opacity: 0;
@@ -18,6 +36,13 @@
   .menu-body{
     width: 85%;
     margin: auto;
+    font-family: Brush;
+    font-size: 28px;
+    text-align: center
+  }
+
+  .menu-body h1{
+    filter: drop-shadow(black 1px 1px 2px);
   }
 
   .menu-select{
@@ -31,6 +56,7 @@
 
   .actualmenucard{
     margin-top: 50px;
+    background-color: #151515;
   }
 
   .menutogglebtn{
@@ -40,7 +66,7 @@
         font-size: 24px;
         border-radius: 25px 0px 25px 0px;
         border: solid #EF4805 2px;
-        background: linear-gradient(to left, rgba(250, 128, 114, 0) 50%, #F9AA05 50%) right;
+        background: linear-gradient(to left, #303030 50%, #F9AA05 50%) right;
         background-size: 200%;
         color: white;
         transition: ease-in-out 0.375s;
@@ -112,6 +138,12 @@
         .menu-body{
             width: 90%;
             margin: auto;
+            text-align: center;
+        }
+        .menu-select{
+            width: 90%;
+            margin: auto;
+            justify-content: center;
         }
         .menuitem{
             flex-direction: column;

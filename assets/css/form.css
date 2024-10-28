@@ -37,16 +37,6 @@
     outline: none;
   }
 
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #F9AA05;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-
   .btn-primary{
     padding: 5px;
     width: 60%;
@@ -75,7 +65,8 @@
 
 
 .custom-select {
-  font-family: Boska;
+  font-size: 28px !important;
+  font-family: Boska !important;
   position: relative;
   width: 100%;
 }
@@ -85,11 +76,14 @@
 }
 
 .select-selected {
+  font-size: 28px !important;
   background-color: #151515;
 
 }
 
 .select-selected:after {
+  font-size: 28px !important;
+  font-family: Boska;
   position: absolute;
   content: "";
   top: 14px;
@@ -108,6 +102,8 @@
   border-radius: 25px 0px 25px 0px;
   border: solid #F9AA05 1px;
   margin: 10px;
+  font-family: Boska;
+  font-size: 28px !important;
 }
 
 .select-items {
@@ -118,8 +114,14 @@
   right: 0;
   z-index: 99;
   border-radius: 25px 0px 25px 0px;
+  font-family: Boska;
+  font-size: 28px !important;
 }
 
 .select-hide {
   display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #303030;
 }
