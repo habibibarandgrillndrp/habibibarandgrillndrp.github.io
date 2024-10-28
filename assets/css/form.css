@@ -125,3 +125,7 @@
 .select-items div:hover, .same-as-selected {
   background-color: #303030;
 }
+
+#additionalDiv {
+  display: none;
+}

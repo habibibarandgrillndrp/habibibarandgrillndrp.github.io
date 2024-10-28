@@ -46,7 +46,7 @@
             <label for="Question5" class="form-label">Your NDRP Website Name (Link works too)</label>
             <textarea required class="form-control" id="Question5"></textarea>
             <br>
-            <label for="Question6">Your Time Zone</label>
+            <label for="Question6" class="form-label">Your Time Zone</label>
             <div class="custom-select">
             <select required id="Question6" name="times">
               <option value="select">Select...</option>
@@ -56,7 +56,7 @@
             </select>
           </div>
             <br>
-            <label for="Question7">What's the best way to reach you?</label>
+            <label for="Question7" class="form-label">What's the best way to reach you?</label>
             <div class="custom-select">
             <select required id="Question7" name="contactway">
               <option value="select">Select...</option>
@@ -67,18 +67,20 @@
             </select>
           </div>
             <br>
-            <label for="Question8">Are you affiliated with any Gang/MC/Group?</label>
+            <label for="Question8" class="form-label">Are you affiliated with any Gang/MC/Group?</label>
             <div class="custom-select">
-            <select required id="Question8" name="yesno">
-              <option value="select">Select...</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
+              <select required id="Question8" name="yesno" onchange="toggleDiv()">
+                <option value="select">Select...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
             </select>
           </div>
             <br>
+            <div id="additionalDiv">
             <label for="Question9" class="form-label">If Yes, What Gang/MC/Group?</label>
             <textarea class="form-control" id="Question9"></textarea>
             <br>
+          </div>
             <label for="Question10" class="form-label">Anything you would like us to know?</label>
             <textarea required class="form-control" id="Question10"></textarea>
             <br>

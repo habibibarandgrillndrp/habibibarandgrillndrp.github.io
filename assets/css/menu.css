@@ -42,9 +42,11 @@ body {
   }
 
   .menu-body h1{
-    filter: drop-shadow(black 1px 1px 2px);
+    filter: drop-shadow(#fff 0px 0px 25px);
   }
 
+
+  
   .menu-select{
     width: 100%;
     display: flex;
