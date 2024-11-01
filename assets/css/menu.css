@@ -149,7 +149,9 @@ body {
         .menu-select{
             width: 90%;
             margin: auto;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
         }
         .menuitem{
             flex-direction: column;
@@ -165,5 +167,9 @@ body {
         }
         .imgmobile{
             display: block;
+        }
+
+        .menutogglebtn{
+            width: 100%;
         }
     }
