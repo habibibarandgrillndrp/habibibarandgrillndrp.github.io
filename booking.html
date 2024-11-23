@@ -29,8 +29,14 @@
     </div>
     <div class="headergap"></div>
 
+    <div id="notification">
+        <span id="notification-message"></span>
+        <br><br>
+        <button id="close-notification" onclick="closeNotification()">Close</button>
+    </div>
+
     <div class="bookingform">
-        <form onsubmit="sendEventbooking(event)">
+        <form  id="forum" onsubmit="sendEventbooking(event)">
             <label for="Question1" class="form-label">First / Last Name</label>
             <textarea required class="form-control" id="Question1"></textarea>
             <br>
@@ -60,7 +66,7 @@
             <br>
             <label for="Question10" class="form-label">Do you want a Food Trunk, Delivery or Pick Up</label>
             <div class="custom-select">
-            <select required id="Question10" name="durations">
+            <select id="Question10" name="durations">
                 <option value="" disabled selected>Select...</option>
                 <option value="Food Trunk">Food Trunk</option>
                 <option value="Delivery">Delivery</option>

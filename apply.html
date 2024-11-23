@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <script defer src="/assets/js/app.js"></script>
-    <script defer src="/assets/js/webhooks.js"></script>
+    <script src="/assets/js/webhooks.js"></script>
 </head>
     <body>
         <div class="desktopnav">
@@ -29,8 +29,14 @@
     </div>
     <div class="headergap"></div>
 
+    <div id="notification">
+      <span id="notification-message"></span>
+      <br><br>
+      <button id="close-notification" onclick="closeNotification()">Close</button>
+  </div>
+
     <div class="appform">
-        <form onsubmit="sendApp(event)">
+        <form id="forum" onsubmit="sendApp(event)">
             <label for="Question1" class="form-label">First / Last Name</label>
             <textarea required class="form-control" id="Question1"></textarea>
             <br>
@@ -48,7 +54,7 @@
             <br>
             <label for="Question6" class="form-label">Your Time Zone</label>
             <div class="custom-select">
-            <select required id="Question6" name="times">
+            <select id="Question6" name="times">
               <option value="" disabled selected>Select...</option>
               <option value="NA">NA</option>
               <option value="EU">EU</option>
@@ -58,7 +64,7 @@
             <br>
             <label for="Question7" class="form-label">What's the best way to reach you?</label>
             <div class="custom-select">
-            <select required id="Question7" name="contactway">
+            <select id="Question7" name="contactway">
               <option value="" disabled selected>Select...</option>
               <option value="Text">Text</option>
               <option value="Phone Call">Phone Call</option>
@@ -69,7 +75,7 @@
             <br>
             <label for="Question8" class="form-label">Are you affiliated with any Gang/MC/Group?</label>
             <div class="custom-select">
-              <select required id="Question8" name="yesno" onchange="toggleDiv()">
+              <select id="Question8" name="yesno" onchange="toggleDiv()">
                 <option value="" disabled selected>Select...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
