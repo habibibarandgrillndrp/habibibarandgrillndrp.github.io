@@ -129,3 +129,35 @@
 #additionalDiv {
   display: none;
 }
+
+#notification {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #303030; /* Red color */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  z-index: 999999999;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  text-align: center;
+}
+
+#close-notification {
+  background-color: white;
+  color: #f44336;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#close-notification:hover {
+  background-color: #f44336;
+  color: white;
+}
