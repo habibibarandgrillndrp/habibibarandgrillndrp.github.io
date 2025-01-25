@@ -54,6 +54,26 @@ bottom: 0;
     margin-bottom: 30px;
 }
 
+.yalla-text{
+    text-align: center;
+}
+
+.yalla-box{
+    font-family: Brush;
+    display: flex;
+    justify-content: space-around;
+    font-size: 38px;
+}
+
+.yalla-box p{
+    font-family: Boska;
+}
+
+
+.yalla-box img{
+    width: 25%;
+}
+
 @media (max-width: 800px){
 
     .intro{
@@ -80,5 +100,17 @@ bottom: 0;
 
     .intromap{
         display: none;
+    }
+
+    .yalla-box img{
+        text-align: center;
+        width: 75%;
+        margin: auto;
+    }
+
+    .yalla-box{
+        font-size: 28px;
+        flex-direction: column;
+        text-align: center;
     }
 }
