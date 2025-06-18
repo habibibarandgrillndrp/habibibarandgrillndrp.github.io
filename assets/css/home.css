@@ -101,16 +101,4 @@ bottom: 0;
     .intromap{
         display: none;
     }
-
-    .yalla-box img{
-        text-align: center;
-        width: 75%;
-        margin: auto;
-    }
-
-    .yalla-box{
-        font-size: 28px;
-        flex-direction: column;
-        text-align: center;
-    }
 }
